@@ -1,2 +1,14 @@
-/* This is style.css */
+/*
 
+Theme Name: Veteran Party Rental
+Theme URI: veteranpartyrental.com
+Author: Steven Zimmer
+Description: Theme for VPR's brand refresh 2017
+Version: 1.0
+
+*/
+
+@import "bootstrap";
+@import "/app/dist/style/base/_variables";
+@import "/app/dist/style/base/_global";
+@import "/app/dist/style/modules/_hero";

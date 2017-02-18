@@ -1,3 +1,9 @@
-<!-- This is index.php -->
+<?php get_header(); ?>
 
-<h1>New <?php bloginfo( 'name' ); ?></h1>
+<div class="container">
+	<div class="col-md-6 col-md-offset-3">
+		<h1>New <?php bloginfo( 'name' ); ?></h1>
+	</div>
+</div>
+
+<?php get_footer(); ?>

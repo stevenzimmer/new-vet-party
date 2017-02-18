@@ -1,5 +1,23 @@
 <?php
 
+// Load stylesheets and scripts
+	function enqueue_vpr_assets() {
+
+		// Enqueue Theme Scripts
+ 		wp_deregister_script( 'jquery' );
+    	wp_register_script( 'jquery', includes_url( '/js/jquery/jquery.js' ), false, NULL, true );
+    	wp_enqueue_script( 'jquery' );
+
+
+		// Enqueue Theme Styles
+
+		wp_enqueue_style( 'Style', get_template_directory_uri() . '/app/dist/style/style.min.css', null, '1.0.0' );
+
+	}
+
+	// Hooks stylesheets and scripts into header and footer
+	add_action( 'wp_enqueue_scripts', 'enqueue_vpr_assets' );
+
 function register_theme_support() {
 
 		// Register primary and footer menus
@@ -39,5 +57,8 @@ function register_theme_support() {
 		// echo "<link rel='Shortcut Icon' type='image/x-icon' href='/wp-content/uploads/2016/11/favicon.ico' />";
 	}
 	add_action('wp_head', 'favicon_add');
+
+	// Removes Wordpress version number in view source
+	add_filter( 'the_generator', '__return_null' );
 
 ?>
