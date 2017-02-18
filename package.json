@@ -1,0 +1,23 @@
+{
+  "name": "vetparty",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevenzimmer/new-vet-party.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stevenzimmer/new-vet-party/issues"
+  },
+  "homepage": "https://github.com/stevenzimmer/new-vet-party#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "normalize.css": "^5.0.0"
+  }
+}
