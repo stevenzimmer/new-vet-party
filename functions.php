@@ -9,9 +9,13 @@
     	wp_enqueue_script( 'jquery' );
 
 
+		// Enqueue Theme Scripts
+
+		wp_enqueue_script( 'Scripts', get_template_directory_uri() . '/app/scripts/script.min.js', null, '1.0.0', true );
+
 		// Enqueue Theme Styles
 
-		wp_enqueue_style( 'Style', get_template_directory_uri() . '/app/dist/style/style.min.css', null, '1.0.0' );
+		wp_enqueue_style( 'Style', get_template_directory_uri() . '/app/style/style.min.css', null, '1.0.0' );
 
 	}
 
