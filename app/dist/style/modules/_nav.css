@@ -1,0 +1,24 @@
+.navbar {
+    background-color: #fff;
+    z-index: 9999;
+    border: 0;
+    font-size: 14px;
+    line-height: 1.42857143;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #fff;
+    background-color: #36b2e7;
+}
+.navbar-nav>li>a {
+  padding-bottom:16px;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff;
+}
+
+.scroll {
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}

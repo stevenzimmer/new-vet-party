@@ -11,4 +11,12 @@ Version: 1.0
 @import "bootstrap";
 @import "/app/dist/style/base/_variables";
 @import "/app/dist/style/base/_global";
+@import "/app/dist/style/modules/_nav";
 @import "/app/dist/style/modules/_hero";
+@import "/app/dist/style/modules/_tiles";
+@import "/app/dist/style/modules/_jumphouses";
+@import "/app/dist/style/modules/_canopies";
+@import "/app/dist/style/modules/_machines";
+@import "/app/dist/style/modules/_about";
+@import "/app/dist/style/modules/_footer";
+

@@ -1,3 +1,7 @@
-body {
-	background-color: $mainblue;
+img {
+	border-radius: 20px;
+	border: none;
+	padding: 0;
+	width: 100%;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.298039);
 }

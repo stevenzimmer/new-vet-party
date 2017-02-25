@@ -26,10 +26,9 @@ function register_theme_support() {
 
 		// Register primary and footer menus
 
-		// register_nav_menus( array(
-		// 	'primary'	=> __( 'Primary Menu', 'vetparty' ),
-		// 	'footer'	=> __( 'Footer', 'vetparty' )
-		// ));
+		register_nav_menus( array(
+			'primary'	=> __( 'Primary Menu', 'vetparty' )
+		));
 
 		// Add featured image to new posts and pages in wp-admin
 		add_theme_support( 'post-thumbnails' );
@@ -58,7 +57,7 @@ function register_theme_support() {
 
 	// Add Favicon to site head section
 	function favicon_add() {
-		// echo "<link rel='Shortcut Icon' type='image/x-icon' href='/wp-content/uploads/2016/11/favicon.ico' />";
+		echo "<link rel='Shortcut Icon' type='image/x-icon' href='/wp-content/uploads/2017/02/favicon.ico' />";
 	}
 	add_action('wp_head', 'favicon_add');
 
