@@ -4,6 +4,7 @@
     border: 0;
     font-size: 14px;
     line-height: 1.42857143;
+    margin-bottom: 0;
 }
 
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {

@@ -1,7 +1,60 @@
+body {
+	font-size: 16px;
+	background-color: $white;
+	font-family: 'Black Ops One', cursive;
+	color: #777;
+}
+
+h2 {
+	margin-bottom: 40px;
+}
+
+
 img {
-	border-radius: 20px;
+	border-radius: 4px;
 	border: none;
 	padding: 0;
 	width: 100%;
 	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.298039);
+}
+
+.btn {
+	display: block;
+	margin-bottom: 20px;
+	min-width: 160px;
+}
+
+.section {
+	padding-bottom: 40px;
+}
+
+.popover-title {
+	font-size: 28px;
+	border-radius: 4px 4px 0 0;
+
+}
+
+.popover-content {
+	padding: 15px;
+	font-size: 22px;
+	line-height: 26px;
+}
+
+
+.popover {
+	max-width: 330px;
+}
+
+#about {
+	background-color: #36b2e7;
+	color: #fff;
+	padding: 40px 0;
+
+	a {
+		color: #fff;
+	}
+}
+
+.affix {
+	top: 25px;
 }
