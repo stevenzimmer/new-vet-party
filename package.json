@@ -33,6 +33,7 @@
     "gulp-postcss": "^6.3.0",
     "gulp-rename": "^1.2.2",
     "gulp-watch": "^4.3.11",
+    "isotope-layout": "^3.0.2",
     "jquery": "^3.1.1",
     "postcss-import": "^9.1.0",
     "postcss-nested": "^1.0.0",

@@ -12,9 +12,7 @@ h2 {
 
 img {
 	border-radius: 4px;
-	border: none;
-	padding: 0;
-	width: 100%;
+	position: relative;
 	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.298039);
 }
 
@@ -31,6 +29,8 @@ img {
 .popover-title {
 	font-size: 28px;
 	border-radius: 4px 4px 0 0;
+	background-color: #5cb85c;
+	color: $white;
 
 }
 
@@ -57,4 +57,28 @@ img {
 
 .affix {
 	top: 25px;
+}
+
+.popover>.arrow {
+	display: none;
+}
+
+#vpr-grid {
+	padding: 40px 0;
+
+	.vpr-item {
+		margin-bottom: 80px;
+
+		&-info {
+			position: relative;
+			h3 {
+				position: absolute;
+				bottom: 0;
+				color: $white;
+				width: 100%;
+				background-color: rgba(0,0,0,.5);
+				padding: 10px 0;
+			}
+		}
+	}
 }

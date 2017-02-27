@@ -57,7 +57,7 @@ function register_theme_support() {
 
 	// Add Favicon to site head section
 	function favicon_add() {
-		echo "<link rel='Shortcut Icon' type='image/x-icon' href='/wp-content/uploads/2017/02/favicon.ico' />";
+		echo "<link rel='Shortcut Icon' type='image/x-icon' href='/wp-content/uploads/favicon.ico' />";
 	}
 	add_action('wp_head', 'favicon_add');
 
