@@ -11,10 +11,6 @@ var gulp 			= require('gulp'),
 	webpack			= require('webpack');
 
 
-gulp.task( 'php', function() {
-	console.log( 'php ran' );
-});
-
 gulp.task( 'styles', function() {
 	return gulp.src('style.css')
 	.pipe(postcss(
@@ -37,14 +33,11 @@ gulp.task('js', function() {
 
 gulp.task('webpack', function(callback) {
 	webpack(require('./webpack.config.js'), function() {
-		console.log('webpack complete');
 		callback();
 	});
 });
 
 gulp.task( 'watch', function() {
-
-	gulp.watch('./*.php', ['php']);
 
 	gulp.watch('./app/bundle/*.js', ['js']);
 
@@ -55,5 +48,5 @@ gulp.task( 'watch', function() {
 });
 
 
-gulp.task('default', ['styles', 'webpack', 'js', 'php', 'watch']);
+gulp.task('default', ['styles', 'webpack', 'js', 'watch']);
 

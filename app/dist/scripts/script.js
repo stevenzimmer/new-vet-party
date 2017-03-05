@@ -43,11 +43,37 @@ jQuery(document).ready(function($) {
         sidebarScroll();
     }
 
-    $(window).scroll(function() {
+    $(window).on('scroll', function() {
         if($(window).width() > 768 ) {
            sidebarScroll();
         }
+
+        // Cache the Window object
+      var $window = $(window);
+
+      // Parallax Backgrounds
+
+      // Tutorial: http://code.tutsplus.com/tutorials/a-simple-parallax-scrolling-technique--net-27641
+
+      $('section[data-type="background"]').each(function(){
+
+        var $bgobj = $(this); // assigning the object
+
+      // Scroll the background at var speed
+      // the yPos is a negative value because we're scrolling it UP!
+      var yPos = -($window.scrollTop() / $bgobj.data('speed'));
+
+      // Put together our final background position
+      var coords = '50% '+ yPos + 'px';
+
+      // Move the background
+      $bgobj.css({ backgroundPosition: coords });
+
+      console.log(coords);
+
     });
+   });
+
 
     $(window).on("resize", function() {
         if( $(window).width() > 768 ) {
@@ -68,6 +94,10 @@ jQuery(document).ready(function($) {
 
         if($(this).hasClass('jumphouses')) {
            $('.popover-title').css('background', '#5bc0de');
+        }
+
+        if($(this).hasClass('machines')) {
+           $('.popover-title').css('background', '#d9534f');
         }
 
         $(".popover").on("mouseleave", function () {
@@ -92,7 +122,7 @@ jQuery(document).ready(function($) {
         var filterValue = $(this).attr('data-filter');
         $container.isotope({ filter: filterValue});
     });
-
+});
 
 
   // $(".navbar a, footer a[href='#myPage'], #tiles a").on('click', function(event) {
@@ -117,8 +147,6 @@ jQuery(document).ready(function($) {
 
   // }
 
-  // $(window).scroll(function() {
-
     // $(".slideanim").each(function(){
     //   var pos = $(this).offset().top;
 
@@ -137,31 +165,3 @@ jQuery(document).ready(function($) {
       //   $(".navbar").removeClass("scroll");
       // }
 
-      // Cache the Window object
-      // var $window = $(window);
-
-      // Parallax Backgrounds
-
-      // Tutorial: http://code.tutsplus.com/tutorials/a-simple-parallax-scrolling-technique--net-27641
-
-      // $('section[data-type="background"]').each(function(){
-
-      //   var $bgobj = $(this); // assigning the object
-
-      // // Scroll the background at var speed
-      // // the yPos is a negative value because we're scrolling it UP!
-      // var yPos = -($window.scrollTop() / $bgobj.data('speed'));
-
-      // // Put together our final background position
-      // var coords = '50% '+ yPos + 'px';
-
-      // // Move the background
-      // $bgobj.css({ backgroundPosition: coords });
-
-      // console.log(coords);
-
-    // });
-
-  });
-
-// });

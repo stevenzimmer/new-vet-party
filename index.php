@@ -3,9 +3,9 @@
 <!-- BEGIN CONTENT -->
 <?php get_template_part( 'partials/hero' ); ?>
 
-<section id="body" class="container">
+<section id="body" class="container-fluid">
 
-	<div id="leftCol" class="col-sm-3">
+	<div id="leftCol" class="col-sm-2 col-sm-offset-1">
 
 		<?php get_sidebar(); ?>
 
@@ -15,6 +15,7 @@
 
 		<?php get_template_part( 'partials/jumphouses' ); ?>
 		<?php get_template_part( 'partials/canopies' ); ?>
+		<?php get_template_part( 'partials/machines' ); ?>
 
 	</div>
 

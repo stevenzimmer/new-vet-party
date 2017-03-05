@@ -1,4 +1,19 @@
-.banner-blue-light {
-	background-color: #2eb5ec;
+#about {
+	background: url(/wp-content/uploads/jumphouse_bg.jpg) repeat fixed;
+    background-position: 50% 100%;
+    background-size: contain;
 	color: #fff;
+	padding: 40px 0;
+	position: relative;
+    min-height: 100%;
+
+    .about-text {
+    	background: rgba(0,60,83,.85);
+    	border-radius: 4px;
+    	padding: 30px;
+    }
+
+	a {
+		color: #fff;
+	}
 }

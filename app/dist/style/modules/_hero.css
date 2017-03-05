@@ -1,10 +1,28 @@
 #hero {
-    background-color: #36b2e7;
+    background: url(/wp-content/uploads/party_bg.jpg) repeat fixed;
+    background-position: 50% 0;
     color: #fff;
-    padding: 40px 0;
+    padding: 80px 0;
+    position: relative;
+    min-height: 100%;
 
     img {
         box-shadow: none;
+    }
+
+    .intro-box {
+    	background: rgba(0,60,83,.85);
+    	border-radius: 4px;
+    	padding: 30px;
+
+    	h1 {
+    		margin-top: 0;
+    	}
+
+    	p {
+    		margin-bottom: 0;
+
+    	}
     }
 }
 

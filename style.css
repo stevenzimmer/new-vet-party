@@ -11,6 +11,7 @@ Version: 1.0
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Black+Ops+One');
 @import "/app/dist/style/base/_variables";
+@import "/app/dist/style/base/_buttons";
 @import "/app/dist/style/base/_global";
 @import "/app/dist/style/modules/_nav";
 @import "/app/dist/style/modules/_hero";

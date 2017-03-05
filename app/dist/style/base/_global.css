@@ -45,15 +45,7 @@ img {
 	max-width: 330px;
 }
 
-#about {
-	background-color: #36b2e7;
-	color: #fff;
-	padding: 40px 0;
 
-	a {
-		color: #fff;
-	}
-}
 
 .affix {
 	top: 25px;
@@ -63,21 +55,57 @@ img {
 	display: none;
 }
 
+.bg-overlay {
+    	background: linear-gradient(to right,rgba(0,98,138,.25) 1%,rgba(0,60,83,.25) 100%);
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+    }
+
 #vpr-grid {
 	padding: 40px 0;
+
+	.jumphouses {
+
+		h3 {
+			background-color: $blue;
+		}
+	}
+
+	.canopies {
+
+		h3 {
+			background-color: $green;
+		}
+	}
+
+	.machines {
+
+		h3 {
+			background-color: $purple;
+		}
+	}
 
 	.vpr-item {
 		margin-bottom: 80px;
 
 		&-info {
 			position: relative;
+			box-shadow: 0 0 15px rgba(0,0,0,.875);
+
+			img {
+				width: 100%;
+			}
+
 			h3 {
 				position: absolute;
 				bottom: 0;
 				color: $white;
 				width: 100%;
-				background-color: rgba(0,0,0,.5);
+				opacity: .8;
 				padding: 10px 0;
+				z-index: 100;
 			}
 		}
 	}

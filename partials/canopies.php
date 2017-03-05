@@ -1,4 +1,4 @@
-<div class="section">
+
 	<?php
 
 	    $post_args = array(
@@ -15,10 +15,11 @@
 	     $price = get_field('price');
 	?>
 
-	<div title="<?php the_Title(); ?> Canopy" data-content="Rent our <?php the_title() ?> canopy for $<?php echo $price ?>/day" class="vpr-item col-sm-6 <?php echo $category[0]->cat_name; ?>">
+	<div title="<?php the_title(); ?> Canopy" data-content="Rent our <?php the_title() ?> canopy for $<?php echo $price ?>/day" class="vpr-item col-sm-6 <?php echo $category[0]->cat_name; ?>">
 		<div class="vpr-item-info">
 			<img class="img-responsive lazyload" src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title() ?> thumbnail">
 			<h3><?php the_title(); ?></h3>
+			<div class="bg-overlay"></div>
 		</div>
 	</div>
 
@@ -26,4 +27,3 @@
 
 	<?php wp_reset_postdata(); ?>
 	<div class="clearfix"></div>
-</div>

@@ -1,0 +1,44 @@
+.btn {
+
+	&-blue {
+		color: $white;
+		background-color: $blue;
+		border-color: $blue;
+
+		&:hover {
+			color: $white;
+		}
+
+		&:focus {
+			color: $white;
+		}
+	}
+
+	&-purple {
+		color: $white;
+		background-color: $purple;
+		border-color: $purple;
+
+		&:hover {
+			color: $white;
+		}
+
+		&:focus {
+			color: $white;
+		}
+	}
+
+	&-green {
+		color: $white;
+		background-color: $green;
+		border-color: $green;
+
+		&:hover {
+			color: $white;
+		}
+
+		&:focus {
+			color: $white;
+		}
+	}
+}
